@@ -25,8 +25,14 @@ hs.hotkey.bind(mod_key, "V", function() hs.application.launchOrFocus('Visual Stu
 hs.hotkey.bind(mod_key, "P", function() hs.application.launchOrFocus('PyCharm CE') end)
 -- iterm 호출
 hs.hotkey.bind(mod_key, "I", function() hs.application.launchOrFocus('iTerm') end)
+-- DBeaver 호출
+hs.hotkey.bind(mod_key, "D", function() hs.application.launchOrFocus('DBeaver') end)
 -- termius 호출
 hs.hotkey.bind(mod_key, "T", function()
+    hs.application.launchOrFocus('Termius')
+end)
+-- Finder 호출
+hs.hotkey.bind(mod_key, "F", function()
     hs.application.launchOrFocus('Termius')
 end)
 -- 윈도우 힌트
@@ -97,9 +103,9 @@ do -- 키보드 언어 변경
     }
 
     local alert_list = {
-        english = "english",
-        korean = "Korean",
-        japanese = "Japanese"
+        english = "English",
+        korean = "한글",
+        japanese = "日本語"
     }
 
     local changeInput = function(lan)
