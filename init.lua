@@ -28,13 +28,9 @@ hs.hotkey.bind(mod_key, "I", function() hs.application.launchOrFocus('iTerm') en
 -- DBeaver 호출
 hs.hotkey.bind(mod_key, "D", function() hs.application.launchOrFocus('DBeaver') end)
 -- termius 호출
-hs.hotkey.bind(mod_key, "T", function()
-    hs.application.launchOrFocus('Termius')
-end)
+hs.hotkey.bind(mod_key, "T", function() hs.application.launchOrFocus('Termius') end)
 -- Finder 호출
-hs.hotkey.bind(mod_key, "F", function()
-    hs.application.launchOrFocus('Termius')
-end)
+hs.hotkey.bind(mod_key, "F", function() hs.application.launchOrFocus('Finder') end)
 -- 윈도우 힌트
 hs.hotkey.bind(mod_key, "F1", hs.hints.windowHints)
 
